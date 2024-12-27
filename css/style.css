@@ -1,0 +1,128 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+:root{
+    --mainColor: rgb(39, 43, 48);
+    --seconColor: rgb(58, 73, 122);
+}
+
+
+
+body {
+    margin: 0;
+    background-color: var(--mainColor);
+    color: white;
+    font-family: cursive;
+}
+
+
+
+.wrapper {
+    background-image: url(../images/wraper.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50%;
+}
+
+
+.navbarFilter{
+    background-color: var(--seconColor) !important;
+    width: 70%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 20px;
+    z-index: 999;
+}
+
+.hovBlue{
+    color: white;
+    transition: all 0.6s;
+}
+
+.hovBlue:hover{
+    color: rgb(0, 153, 204);
+}
+
+
+.fastCap {
+    color: rgb(143, 145, 148);
+}
+
+.gameCondition{
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 5px;
+    background-color: blue;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+.gameItem{
+    filter: grayscale(50%);
+    transition: all 0.5s;
+}
+
+
+.gameItem:hover{
+    filter: grayscale(0%);
+    scale: 1.06;
+}
+
+.gener{
+    color: #000;
+    background-color: var(--bs-info);
+    padding: 2px;
+    border-radius: 4px;
+}
+
+#showGame{
+    background-color: transparent;
+    border: 1px solid var(--bs-warning);
+    transition: all 0.6s;
+    color: white;
+}
+
+#showGame:hover{
+    background-color: var(--bs-warning);
+}
+
+.xMark {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 100px;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        height: 120px;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .wrapper {
+        height: 150px;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        height: 200px;
+    }
+}

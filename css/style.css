@@ -37,6 +37,10 @@ body {
     z-index: 999;
 }
 
+.logo-container{
+    width: 60px;
+}
+
 .hovBlue{
     color: white;
     transition: all 0.6s;
@@ -65,6 +69,8 @@ body {
 .gameItem{
     filter: grayscale(50%);
     transition: all 0.5s;
+    backface-visibility: hidden;
+    cursor: pointer;
 }
 
 
@@ -72,6 +78,16 @@ body {
     filter: grayscale(0%);
     scale: 1.06;
 }
+
+.extraDetails{
+    background-color: #32383e;
+    color: white;
+    margin: 0;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+
 
 .gener{
     color: #000;
@@ -97,6 +113,17 @@ body {
     right: 40px;
 }
 
+
+.lineUp {
+    border: rgb(33, 36, 41) 1px solid;
+    background-color: rgb(38, 42, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    padding: 0 10px;
+}
 
 
 

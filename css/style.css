@@ -67,7 +67,7 @@ body {
 
 
 .gameItem{
-    filter: grayscale(50%);
+    filter: grayscale(80%);
     transition: all 0.5s;
     backface-visibility: hidden;
     cursor: pointer;
@@ -107,7 +107,7 @@ body {
     background-color: var(--bs-warning);
 }
 
-.xMark {
+.x-mark {
     position: absolute;
     top: 30px;
     right: 40px;

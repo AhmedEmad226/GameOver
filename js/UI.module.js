@@ -67,7 +67,6 @@ for(let i = 0; i < response.length; i++) {
 
 export async function displayGames() {
 	
-
 	await getData()
 
 	let container = ``
@@ -91,13 +90,14 @@ export async function displayGames() {
 
 	liberary.innerHTML = container;
 
+
 	let gameItems = document.querySelectorAll('.gameItem') 
 	for (let i = 0; i < gameItems.length; i++) {
 		gameItems[i].addEventListener('click', () => {
+			localStorage.setItem('selectedGame', games[i].id);
 			window.location.href = "../details.html"
 		});
 	}
-
 }
 
 
